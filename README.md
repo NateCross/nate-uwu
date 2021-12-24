@@ -1,3 +1,6 @@
+# Nate's modified uwu theme
+- This theme is based on the Dark Horizon theme from VSCode, plus uwu itself
+
 <div align="center">
 <img src="https://raw.githubusercontent.com/Mangeshrex/uwu.vim/main/assets/uwu-template.png" alt="uwu">
 <h1> A beautiful and dark vim/neovim colorscheme.</h1>
