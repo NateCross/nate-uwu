@@ -5,32 +5,37 @@
 
 " Setting up the colors
 let s:uwu0_gui = "#1b2224"
-let s:uwu1_gui = "#f65b5b"
+let s:uwu1_gui = "#E95678" " edited
 let s:uwu2_gui = "#6bb05d"
-let s:uwu3_gui = "#e59e67"
-let s:uwu4_gui = "#53A7BF"
-let s:uwu5_gui = "#b185db"
+let s:uwu3_gui = "#FDB849" " edited
+let s:uwu4_gui = "#25B0BC" " edited
+let s:uwu5_gui = "#E0AAFF" " edited
 let s:uwu6_gui = "#51a39f"
 let s:uwu7_gui = "#c4c4c4"
 let s:uwu8_gui = "#2f3638"
-let s:uwu9_gui = "#c26f6f"
+let s:uwu9_gui = "#F09483"
 let s:uwu10_gui = "#8dc776"
 let s:uwu11_gui = "#ff6565"
 let s:uwu12_gui = "#6CBAD1"
 let s:uwu13_gui = "#bb8fe5"
 let s:uwu14_gui = "#6db0ad"
 let s:uwu15_gui = "#cccccc"
-let s:uwubg_gui = "#131A1C"
-let s:uwufg_gui = "#C5C8C9"
+let s:uwubg_gui = "#111111" " edited
+let s:uwufg_gui = "#D5D8DA" " edited
+
+" New colors below
+let s:uwu17_gui = "#6C6F93"
+let s:uwu18_gui = "#1f1f1f"
+" New colors end
 
 let s:UwuNR_fg = s:uwu7_gui
 
 hi clear
 syntax reset
-let g:colors_name = "uwu"
+let g:colors_name = "nate-uwu"
 set background=dark
 set t_Co=256
-hi Normal guifg=#C5C8C9 ctermbg=NONE guibg=#131A1C gui=NONE
+hi Normal guifg=#D5D8DA ctermbg=NONE guibg=#111111 gui=NONE
 
 set t_Co=256
 let &t_ut=''
@@ -51,7 +56,7 @@ endif
 
 "Syntax Highlighting
 exe "hi CursorLineNR guifg=" .s:UwuNR_fg
-exe "hi CursorLine guibg=" .s:uwu0_gui
+exe "hi CursorLine guibg=" .s:uwu18_gui
 
 exe "hi ErrorMsg guifg=" .s:uwu1_gui." guibg=".s:uwu8_gui
 exe "hi WarningMsg guifg=" .s:uwu0_gui
@@ -92,7 +97,7 @@ exe "hi Operator guifg=" .s:uwu4_gui
 exe "hi ColorColumn guibg=" .s:uwu8_gui
 exe "hi PMenu guifg=".s:uwu7_gui." guibg=" .s:uwu0_gui
 exe "hi PMenuSel guifg=".s:uwu8_gui." guibg=".s:uwu5_gui
-exe "hi SignColumn guibg=" .s:uwu0_gui
+exe "hi SignColumn guibg=" .s:uwubg_gui
 exe "hi Title guifg=" .s:uwu3_gui
 exe "hi LineNr guifg=".s:uwu8_gui
 exe "hi NonText guifg=".s:uwu5_gui." guibg=".s:uwu0_gui

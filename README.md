@@ -1,6 +1,14 @@
 # Nate's modified uwu theme
-- This theme is based on the Dark Horizon theme from VSCode, plus uwu itself
+- This theme is based on the [Dark Horizon](https://github.com/mcagampan/dark-horizon) theme from VSCode, plus uwu itself
 
+## TO-DO
+- Lualine support
+  - Make it similar to kitty.conf
+- QuickUI (I think that's what it was called?) support
+- Telescope support
+  - Rose-colored borders. Maybe that's possible?
+
+# Original readme
 <div align="center">
 <img src="https://raw.githubusercontent.com/Mangeshrex/uwu.vim/main/assets/uwu-template.png" alt="uwu">
 <h1> A beautiful and dark vim/neovim colorscheme.</h1>
