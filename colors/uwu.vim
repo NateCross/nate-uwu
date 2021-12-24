@@ -125,6 +125,25 @@ exe "hi DiffChange guifg=".s:uwu5_gui." guibg=".s:uwubg_gui
 exe "hi DiffDelete guifg=".s:uwu6_gui." guibg=".s:uwubg_gui
 exe "hi DiffText guifg=".s:uwu1_gui." guibg=".s:uwubg_gui
 
+" Telescope Highlights
+" highlight TelescopeSelection      guifg=#D79921 gui=bold " Selected item
+" highlight TelescopeSelectionCaret guifg=#CC241D          " Selection caret
+" highlight TelescopeMultiSelection guifg=#928374          " Multisections
+" exe "hi TelescopeNormal guibg=".s:uwu1_gui
+" highlight TelescopeNormal         guibg=#00000           " Floating windows created by telescope
+
+" Border highlight groups
+exe "hi TelescopeBorder guifg=".s:uwu1_gui
+" highlight TelescopePromptBorder   guifg=#ffffff
+" highlight TelescopeResultsBorder  guifg=#ffffff
+exe "hi TelescopePreviewBorder guifg=".s:uwu4_gui
+
+" Highlight characters your input matches
+" highlight TelescopeMatching       guifg=blue
+
+" Color the prompt prefix
+" highlight TelescopePromptPrefix   guifg=red
+
 " GitGutter Highlightings
 exe "hi GitGutterAdd guifg=".s:uwu3_gui
 exe "hi GitGutterChange guifg=".s:uwu1_gui
