@@ -20,22 +20,34 @@ let s:uwu12_gui = "#6CBAD1"
 let s:uwu13_gui = "#bb8fe5"
 let s:uwu14_gui = "#6db0ad"
 let s:uwu15_gui = "#cccccc"
-let s:uwubg_gui = "#111111" " edited
+" let s:uwubg_gui = "#111111" " edited
+let s:uwubg_gui = "#120307" " edited, alt
 let s:uwufg_gui = "#D5D8DA" " edited
 
 " New colors below
 let s:uwu17_gui = "#6C6F93"
-let s:uwu18_gui = "#1f1f1f"
+let s:uwu18_gui = "#0c0c0c"
+let s:uwu19_gui = "#DC143C"
+let s:uwu20_gui = "#E0115F"
+let s:uwu21_gui = "#880808"
+let s:uwu22_gui = "#E35335"
+let s:uwu23_gui = "#160a0d"
 " New colors end
 
 let s:UwuNR_fg = s:uwu7_gui
 
 hi clear
 syntax reset
-let g:colors_name = "nate-uwu"
+let g:colors_name = "uwu"
 set background=dark
 set t_Co=256
-hi Normal guifg=#D5D8DA ctermbg=NONE guibg=#111111 gui=NONE
+
+" Background
+" This makes it transparent
+hi Normal guifg=#D5D8DA ctermbg=NONE guibg=#120307 gui=NONE
+" Previous versions below
+" hi Normal guifg=#D5D8DA ctermbg=NONE guibg=NONE gui=NONE
+" hi Normal guifg=#D5D8DA ctermbg=NONE guibg=#111111 gui=NONE
 
 set t_Co=256
 let &t_ut=''
@@ -56,7 +68,7 @@ endif
 
 "Syntax Highlighting
 exe "hi CursorLineNR guifg=" .s:UwuNR_fg
-exe "hi CursorLine guibg=" .s:uwu18_gui
+exe "hi CursorLine guibg=" .s:uwu23_gui
 
 exe "hi ErrorMsg guifg=" .s:uwu1_gui." guibg=".s:uwu8_gui
 exe "hi WarningMsg guifg=" .s:uwu0_gui
@@ -100,18 +112,19 @@ exe "hi PMenuSel guifg=".s:uwu8_gui." guibg=".s:uwu5_gui
 exe "hi SignColumn guibg=" .s:uwubg_gui
 exe "hi Title guifg=" .s:uwu3_gui
 exe "hi LineNr guifg=".s:uwu8_gui
-exe "hi NonText guifg=".s:uwu5_gui." guibg=".s:uwu0_gui
+exe "hi NonText ctermbg=NONE guifg=".s:uwu5_gui." guibg=".s:uwu0_gui
 exe "hi Comment guifg=".s:uwu8_gui "gui=italic" 
 exe "hi SpecialComment guifg=".s:uwu8_gui "gui=italic guibg=NONE "
 exe "hi TabLineFill gui=NONE guibg=".s:uwu8_gui
 exe "hi TabLine guifg=".s:uwu7_gui." guibg=".s:uwu8_gui
-exe "hi StatusLine guibg=".s:uwubg_gui." guifg=".s:uwufg_gui
-exe "hi StatusLineNC guibg=".s:uwubg_gui." guifg=".s:uwufg_gui
+exe "hi StatusLine guibg=".s:uwubg_gui." guifg=".s:uwu19_gui
+exe "hi StatusLineNC guibg=".s:uwubg_gui." guifg=".s:uwu19_gui
 exe "hi Search guibg=".s:uwu8_gui." guifg=".s:uwu4_gui
-exe "hi VertSplit gui=NONE guifg=".s:uwu0_gui." guibg=".s:uwu0_gui
+exe "hi VertSplit gui=NONE guifg=".s:uwu20_gui." guibg=".s:uwubg_gui
 exe "hi Visual gui=NONE guibg=".s:uwu0_gui
 exe "hi Underlined guifg=".s:uwu3_gui
-exe "hi EndOfBuffer guibg=NONE"
+exe "hi EndOfBuffer guibg=NONE guifg=".s:uwu22_gui
+exe "hi Whitespace guibg=NONE guifg=".s:uwu20_gui
 
 " Spell Highlightings
 exe "hi SpellBad guifg=".s:uwu1_gui
@@ -310,3 +323,12 @@ exe "hi NvimTreeGitDirty guifg=".s:uwu1_gui
 exe "hi NvimTreeGitDeleted guifg=".s:uwu1_gui
 exe "hi NvimTreeRootFolder guifg=".s:uwu5_gui
 exe "hi NvimTreeIndentMarker guifg=".s:uwu0_gui
+
+" IndentBlankline Highlights
+exe "hi IndentBlanklineChar guifg=".s:uwu8_gui." guibg=NONE gui=nocombine"
+exe "hi IndentBlanklineContextChar guifg=".s:uwu11_gui." guibg=NONE gui=nocombine"
+exe "hi IndentBlanklineSpaceChar guifg=".s:uwu20_gui." guibg=NONE gui=nocombine"
+exe "hi IndentBlanklineSpaceCharBlankline guifg=".s:uwu20_gui." guibg=NONE gui=nocombine"
+
+" Floaterm
+exe "hi FloatermBorder guibg=NONE guifg=".s:uwu21_gui
