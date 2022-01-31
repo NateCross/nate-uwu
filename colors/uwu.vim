@@ -107,8 +107,8 @@ exe "hi Storage guifg=" .s:uwu9_gui
 exe "hi Statement guifg=" .s:uwu3_gui
 exe "hi Operator guifg=" .s:uwu4_gui
 exe "hi ColorColumn guibg=" .s:uwu8_gui
-exe "hi PMenu guifg=".s:uwu7_gui." guibg=" .s:uwu0_gui
-exe "hi PMenuSel guifg=".s:uwu8_gui." guibg=".s:uwu5_gui
+exe "hi PMenu guifg=".s:uwu20_gui." guibg=" .s:uwu0_gui
+exe "hi PMenuSel guifg=".s:uwu18_gui." guibg=".s:uwu20_gui
 exe "hi SignColumn guibg=" .s:uwubg_gui
 exe "hi Title guifg=" .s:uwu3_gui
 exe "hi LineNr guifg=".s:uwu8_gui
@@ -125,6 +125,7 @@ exe "hi Visual gui=NONE guibg=".s:uwu0_gui
 exe "hi Underlined guifg=".s:uwu3_gui
 exe "hi EndOfBuffer guibg=NONE guifg=".s:uwu22_gui
 exe "hi Whitespace guibg=NONE guifg=".s:uwu20_gui
+exe "hi Folded guibg=".s:uwu8_gui." guifg=".s:uwu20_gui
 
 " Spell Highlightings
 exe "hi SpellBad guifg=".s:uwu1_gui
